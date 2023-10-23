@@ -1,0 +1,31 @@
+
+.card{
+    position: relative;
+    border-radius: 6%;
+    padding: 3px 3px 3px 3px;
+    margin: 5px 0 0 5px;
+}
+.cardimg{
+    margin: 0 18px 0 0;
+    max-width: 160px;
+    max-height: 310px;
+    align-items: center;
+}
+.titulo-1{
+   font-size: 30px;
+   padding: 3px 3px 3px 3px;
+   margin: 5px 0 0 5px;
+
+}
+.titulo-1.p{
+    font-style:italic;
+}
+.FooterContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px 5px 5px;
+    background-color: darkslategrey;
+    color: white;
+}

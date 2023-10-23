@@ -4,12 +4,11 @@ import CardGroup from 'react-bootstrap/CardGroup';
 const AboutUs = () => {
     return (
 
-        <CardGroup>
+        <CardGroup className="card">
       <Card>
-        <Card.Img variant="top" 
-        style={{maxHeight: "160px", objectFit: 'cover', maxWidth:"310px", justifyContent:'center'}}
+        <Card.Img  className="cardimg" variant="top" 
         src="src/assets/images/cardfield1.jpg" />
-        <Card.Body>
+        <Card.Body className="classBody">
           <Card.Title>Card title</Card.Title>
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
@@ -21,8 +20,8 @@ const AboutUs = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top"
-        style={{maxHeight: "160px", objectFit: 'cover', maxWidth:"310px"}} src="src/assets/images/cardfield2.jpg" />
+        <Card.Img variant="top"  className="cardimg"
+        src="src/assets/images/cardfield2.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -35,8 +34,7 @@ const AboutUs = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top"
-        style={{maxHeight: "160px", objectFit: 'cover', maxWidth:"310px"}} 
+        <Card.Img  className="cardimg" variant="top"
          src="src/assets/images/cardfield3.png" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>

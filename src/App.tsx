@@ -1,15 +1,28 @@
 
-import CarouselHome from "./components/CarouselHome/CarouselHome"
 import Header from "./components/Header/Header"
-import AboutUs from "./components/AboutUs/AboutUs"
+
+import "./styles/styles.css";
+import AppRoutes from "./routes/AppRoutes";
+import { BrowserRouter as Router} from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import { Container} from "react-bootstrap";
+//suspense carga lo de approutes en segundo plano
+import {Suspense} from 'react';
+import Loader
+ from "./components/Loader/Loader";
+
 function App() {
   return (
     <>
+    <Router>
       <Header/>
-      <CarouselHome/>
-      <p>About Us</p>
-      Know more about us clicking on the text fields.
-      <AboutUs/>
+      <Container style={{minHeight:'100vh', minWidth: '100%', padding:'0'}}>
+        <Suspense fallback={<Loader/>} >   
+      <AppRoutes/>
+        </Suspense>
+      </Container>
+      </Router>
+      <Footer/>
     </>
   )
 }
