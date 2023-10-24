@@ -2,7 +2,6 @@ import { ModalType } from "../../types/ModalType";
 import { Product } from "../../types/Products";
 import { Button, Form, FormLabel, Modal } from "react-bootstrap";
 import {toast} from "react-toastify";
-import { Toast } from "react-bootstrap";
 
 //Dependencias para validar formularios
 import * as Yup from "yup";
