@@ -7,7 +7,7 @@ const AboutUs = () => {
         <CardGroup className="card">
       <Card>
         <Card.Img  className="cardimg" variant="top" 
-        src="src/assets/images/cardfield1.jpg" />
+        src="../src/assets/images/cardfield1.jpg" />
         <Card.Body className="classBody">
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -21,7 +21,7 @@ const AboutUs = () => {
       </Card>
       <Card>
         <Card.Img variant="top"  className="cardimg"
-        src="src/assets/images/cardfield2.jpg" />
+        src="../src/assets/images/cardfield2.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -35,7 +35,7 @@ const AboutUs = () => {
       </Card>
       <Card>
         <Card.Img  className="cardimg" variant="top"
-         src="src/assets/images/cardfield3.png" />
+         src="../src/assets/images/cardfield3.png" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
