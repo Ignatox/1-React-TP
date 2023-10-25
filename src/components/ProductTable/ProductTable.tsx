@@ -10,7 +10,7 @@ import { EditButton } from "../EditButton/EditButton";
 import DeleteButton from "../DeleteButton/DeleteButton";
 
 const ProductTable = () => {
-    //Variable que va a contener los datos recibidos por la API
+    //Estado o Variable que va a contener los datos recibidos por la API
     const[products, setProducts] = useState<Product[]>([]);
     //Variable que muestra el componente Loader hasta que se reciban los datos de la API
     const[isLoading, setIsLoading] = useState(true);
@@ -81,6 +81,7 @@ const handleClick = (newTitle: string, prod: Product, modal: ModalType) => {
                 </tr>
             </thead>
             <tbody>
+                {/* El .map transforma los productos que traigamos, a un formato jsx */}
                 {products.map( product => (
                     <tr key={product.id}>
                         <td>{product.title}</td>
